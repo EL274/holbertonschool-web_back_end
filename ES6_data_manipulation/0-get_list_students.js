@@ -6,6 +6,3 @@ function getListStudents() {
    ];
  }
  
- const students = getListStudents();
- console.log(students);
- 
