@@ -1,6 +1,3 @@
-export default function getStudentsByLocation(students, city) {
-    if (students instanceof Array) {
-      return students.filter((student) => student.location === city);
-    }
-    return [];
-  }
+export default function getStudentsByLocation(list , city) {
+  return list.filter((x) => x.location === city);
+}
