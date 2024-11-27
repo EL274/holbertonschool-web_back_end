@@ -1,0 +1,1 @@
+expaort default function getResponseFromAPI()
