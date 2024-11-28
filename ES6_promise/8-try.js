@@ -3,5 +3,4 @@ export default function divideFunction(numerator, denominator) {
     throw newError('cannot divide by 0');
   }
     return numerator / denominator;
-  }
 }
