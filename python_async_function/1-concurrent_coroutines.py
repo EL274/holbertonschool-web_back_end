@@ -1,18 +1,27 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 
-import random
-from typing import list 
+"""
+This module provides a function to execute wait_random multiple times
+and return the results in sorted order.
+"""
+
 import asyncio
+from typing import List
 
-async def wait_random(max_delay: int) -> float:
-    delay = random.uniform(0, max_delay)
-    await asyncio.sleep(delay)
-    return delay
 
-async def wait_n(n: int, max_delay: int) -> list [float]:
-     tasks = [wait_random(max_delay) for _ in range (n)]
-     delays = []
-     for task in asyncio.as_completed (tasks):
-          delay = await task 
-          delays.append(delay)
-          return(delays)
+wait_random = __import__('0-basic_async_syntax').wait_random
+
+
+async def wait_n(n: int, max_delay: int) -> List[float]:
+    """Execute wait_random n times with max_delay and return sorted results."""
+    task = [wait_random(max_delay) for _ in range(n)]
+    delays = []
+    for task in asyncio.as_completed(task):
+        delay = await task
+        for i, val in enumerate(delays):
+            if delay < val:
+                delays.insert(i, delay)
+                break
+        else:
+            delays.append(delay)
+    return delays
