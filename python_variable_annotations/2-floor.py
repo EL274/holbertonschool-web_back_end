@@ -1,5 +1,11 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
+"""floor"""
 
-from math import floor
-def floor(n:float) ->float:
-    return  floor(n)
+import math
+
+
+def floor(n: float) -> int:
+    """
+    Returns the floor of the given floating-point number.
+    """
+    return math.floor(n)
