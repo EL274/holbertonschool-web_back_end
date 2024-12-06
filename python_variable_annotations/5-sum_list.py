@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 
 """5-sum_list.py"""
-from typing import float
+from typing import List
 
 
-def sum_list(imput_list: list[float]) -> float:
+def sum_list(input_list: List[float]) -> float:
     """list of floats to a sum of floats"""
-    return sum(imput_list)
+    res: float = 0
+    for i in input_list:
+        res += i
+    return res
