@@ -1,8 +1,11 @@
 #!/usr/bin/python3
+
+
 import asyncio
 import random
 
-async def wait_random (max_delay: int=10) -> float:
-    delay = random.uniform(0,max-delay)
-    await asyncio.sleep(delay) 
+
+async def wait_random(max_delay: int = 10) -> float:
+    delay = random.uniform(0, max-delay)
+    await asyncio.sleep(delay)
     return delay
