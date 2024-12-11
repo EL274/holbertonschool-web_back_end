@@ -2,9 +2,9 @@
 
 import asyncio
 from typing import List
-async_generator = __import__('0-async_generator.py').async_generator
+async_generator = __import__('0-async_generator').async_generator
 
 
 async def async_comprehension() -> List[float]:
-    """Collecte 10 nombres aléatoires à l'aide d'une compréhension"""
+    """collect 10 random numbers using an async comprehensing"""
     return [number async for number in async_generator()]
