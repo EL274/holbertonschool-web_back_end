@@ -16,3 +16,10 @@ def display_information(mongo_collection):
 
     print("{} status check".format(mongo_collection.count_documents(
         {"method": methods[0], "path": "/status"})))
+
+
+if __name__ == "__main__":
+    client = MongoClient('mongodb://127.0.0.1:27017')
+    nginx_collection = client.logs.nginx
+
+    display_information(nginx_collection)
