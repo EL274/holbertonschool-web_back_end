@@ -1,3 +1,5 @@
+//1-stdin.js
+
 // Afficher le message de bienvenue
 console.log("Welcome to Holberton School, what is your name?");
 
