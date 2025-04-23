@@ -1,15 +1,18 @@
 #!/usr/bin/env python3
-"""Module pour les opérations mathématiques de base
-Ce module fournit des fonctions mathématiques avec des annotations de type
+"""Module pour la conversion de types numériques.
+
+Ce module fournit des fonctions utilitaires pour convertir
+des nombres en d'autres types de données avec annotations de type.
 """
-import math
 
 
-def floor(n: float) -> int:
-    """Retourne l'arrondi inférieur (floor) d'un nombre flottant.
+def to_str(n: float) -> str:
+    """Convertit un nombre flottant en sa représentation textuelle.
+
     Args:
-        n: Nombre flottant à arrondir vers le bas
-    Returns
-        L'entier résultant de l'arrondi vers le bas (floor)
+        n (float): Le nombre décimal à convertir
+
+    Returns:
+        str: La représentation textuelle du nombre
     """
-    return math.floor(n)
+    return str(n)
