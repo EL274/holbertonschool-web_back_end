@@ -1,16 +1,19 @@
 #!/usr/bin/env python3
-"""Module pour une fonction d'addition de nombres flottants.
+"""Module pour les opérations mathématiques de base.
 
-Ce module fournit une fonction simple pour additionner deux nombres flottants.
+Ce module fournit des fonctions mathématiques de base avec des annotations de type.
 """
 
+import math
 
-def add(a: float, b: float) -> float:
-    """Additionne deux nombres flottants et retourne leur somme.
+
+def floor(n: float) -> int:
+    """Retourne l'arrondi inférieur (floor) d'un nombre flottant.
+    
     Args:
-        a: Premier nombre flottant
-        b: Deuxième nombre flottant
+        n: Nombre flottant à arrondir vers le bas
+    
     Returns:
-        La somme des deux nombres sous forme de flottant
+        L'entier résultant de l'arrondi vers le bas (floor)
     """
-    return a + b
+    return math.floor(n)
