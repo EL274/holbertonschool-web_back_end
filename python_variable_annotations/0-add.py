@@ -1,18 +1,18 @@
 #!/usr/bin/env python3
-"""Module pour une fonction d'addition flottants.
+"""Module pour une fonction d'addition de nombres flottants.
 
 Ce module fournit une fonction simple pour additionner deux nombres flottants.
 """
 
-def add(a: float, b: float) -> float:
-    """
-    Additionnr deux nombres flottants et retourne leur somme.
 
+def add(a: float, b: float) -> float:
+    """Additionne deux nombres flottants et retourne leur somme.
+    
     Args:
-        a (float): the first number
-        b (float): the second number
-        
+        a: Premier nombre flottant
+        b: Deuxième nombre flottant
+    
     Returns:
-        float: the sum of a and b
+        La somme des deux nombres sous forme de flottant
     """
     return a + b
