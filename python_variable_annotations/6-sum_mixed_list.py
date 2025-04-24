@@ -1,20 +1,20 @@
 #!/usr/bin/env python3
-"""Module for operations on mixed numeric lists.
+"""Module pour les opérations mixées sur les listes numériques
 
-This module provides functions for performing calculations on lists containing
-both integers and floating-point numbers.
+Ce module fournit les fonctions pour  calculer la somme d'une liste
+de nombres qui peuvent contenir des entiers et des flottants.
 """
 
 from typing import List, Union
 
 
 def sum_mixed_list(mxd_lst: List[Union[int, float]]) -> float:
-    """Calculates the sum of a list containing integers and floats.
+    """Calcul la somme d'une liste contenant intiers et des flottants
 
     Args:
-        mxd_lst: List containing integers and/or floating-point numbers
+        mxd_lst: Liste contenant des entiers et/ou des flottants 
 
     Returns:
-        The sum of all elements in the list as a floating-point number
+        La somme de tous les éléments dans la liste comme un flottant
     """
     return float(sum(mxd_lst))
