@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Module pour les opérations sur les listes numériques.
 
-Ce module fournit des fonctions pour effectuer des calculs sur des listes de nombres.
+Ce module fournit des fonctions pour calculer sur des listes de nombres.
 """
 
 from typing import List
