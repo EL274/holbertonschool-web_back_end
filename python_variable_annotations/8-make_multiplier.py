@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Module pour créer un multiplicateur
-Ce module fournit la fonction pour créer un multiplicateur 
+Ce module fournit la fonction pour créer un multiplicateur
 """
 from typing import Callable
 def make_multiplier (multiplier: float) -> Callable[[float], float]:
