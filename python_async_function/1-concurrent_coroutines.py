@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
 """
-This module provides a function to execute wait_random multiple times
-and return the results in sorted order.
+Ce module fournit une fonction qui execute plusieurs fois des attentes aléatoires
+et retourne les résultats dans l'ordrecroissant
 """
 
 import asyncio
@@ -13,7 +13,7 @@ wait_random = __import__('0-basic_async_syntax').wait_random
 
 
 async def wait_n(n: int, max_delay: int) -> List[float]:
-    """Execute wait_random n times with max_delay and return sorted results."""
+    """Execute wait_random n fois avec max_delay et retourne le resultat."""
     task = [wait_random(max_delay) for _ in range(n)]
     delays = []
     for task in asyncio.as_completed(task):
