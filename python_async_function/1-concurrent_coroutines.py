@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 
 """
-Ce module fournit une fonction qui execute plusieurs fois de façon aléatoire et retourne le résultat
-dans l'ordre
+Ce module fournit une fonction qui s'excute aléatoirement et retourne le résultat
 """
 
 import asyncio
