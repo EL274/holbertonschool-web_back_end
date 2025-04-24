@@ -2,7 +2,7 @@
 """Module pour la conversion d'une valeur en tuple
 Ce module fournit la fonction pour convertir une valeur en tuple
 """
-from typing import Union,tuple
+from typing import Union, tuple
 
 
 def to_kv(k:str, v: Union[int, float]) -> tuple[str, float]:
