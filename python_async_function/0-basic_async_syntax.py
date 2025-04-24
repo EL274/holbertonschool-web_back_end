@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 """
-This module provides an asynchronous function to wait for a random delay.
+Ce module fournit une fonction  asynchrone pour attendre un délai aléatoire.
 """
 
 import asyncio
@@ -9,7 +9,7 @@ import random
 
 
 async def wait_random(max_delay: int = 10) -> float:
-    """Wait for a random delay up to max_delay seconds and return the delay."""
+    """attendre un delai aléatoire jusqu'au max_delay secondes et retourne le delai."""
     sleep = random.uniform(0, max_delay)
     await asyncio.sleep(sleep)
     return sleep
