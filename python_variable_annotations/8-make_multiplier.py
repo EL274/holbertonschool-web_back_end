@@ -3,6 +3,8 @@
 Ce module fournit la fonction pour créer un multiplicateur
 """
 from typing import Callable
+
+
 def make_multiplier (multiplier: float) -> Callable[[float], float]:
     """Crée une fonction qui multiplie un nombre par un multiplicateur
      Args:
