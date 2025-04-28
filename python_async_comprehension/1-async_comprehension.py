@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Define a asynchronous coroutine - async_comprehension"""
+"""Definie une coroutine asynchrone - async_comprehension"""
 
 
 import asyncio
