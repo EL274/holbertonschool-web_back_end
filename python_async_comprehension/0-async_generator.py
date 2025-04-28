@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Define a asynchronous coroutine - async_generator"""
+"""Definie une coroutine asynchrone - async_generator"""
 
 
 import asyncio
