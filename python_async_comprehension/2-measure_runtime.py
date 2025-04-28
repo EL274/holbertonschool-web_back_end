@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Define a asynchronous coroutine - measure_runtime"""
+"""Definie une asynchrone coroutine - measure_runtime"""
 
 
 import asyncio
@@ -11,7 +11,7 @@ async_comprehension = __import__('1-async_comprehension').async_comprehension
 
 
 async def measure_runtime() -> float:
-    """Return the execution time of async_comprehension 4 times"""
+    """Renvoie le temps d'exécution de async_comprehension 4 fois"""
     t1 = time.time()
     await asyncio.gather(*(async_comprehension() for _ in range(4)))
     t2 = time.time()
