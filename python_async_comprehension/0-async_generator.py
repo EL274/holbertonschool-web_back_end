@@ -8,7 +8,7 @@ from typing import AsyncGenerator
 
 
 async def async_generator() -> AsyncGenerator[float, None]:
-    """Attendez 1 seconde, puis donnez un nombre aléatoire compris entre 0 et 10"""
+    """Attendez 1 seconde, puis donne un nombre aléatoire entre 0 et 10"""
     for i in range(10):
         await asyncio.sleep(1)
         yield uniform(0.0, 10.0)
