@@ -29,11 +29,11 @@ class Server:
             Obtenir la page 
 
             Args:
-                page: Current page
-                page_size: Total size of the page
+                page: page actuelle
+                page_size: Taille de la page
 
             Return:
-                List of the pagination done
+                Liste des paginations effectuées
         """
         assert isinstance(page, int) and page > 0
         assert isinstance(page_size, int) and page_size > 0
@@ -46,12 +46,13 @@ class Server:
 
 def index_range(page: int, page_size: int) -> Tuple[int, int]:
     """
-    Range of the page
+    Portée de la page
     Args:
-        page: Current page
-        page_size: Total size of the page
+        page: Page actuelle
+        page_size: Taille totale de la page
     Return:
-        tuple with the range start and end size page
+        tuple avec la plage de taille de début et de fin
+        de page
     """
 
     final_size: int = page * page_size
