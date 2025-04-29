@@ -57,7 +57,7 @@ class Server:
                 page: le numéro de la page actuelle
                 data: la page du jeu de données
                 (equivalent to return from previous task)
-                next_page: numéro de la page suivante,aucun s'il n'ya pas 
+                next_page: numéro de la page suivante,aucun s'il n'ya pas
                 prev_page: numéro de la page précédente,
                 Aucun s'il n'y a pas de page précédente
                 total_pages: le nombre total de pages
