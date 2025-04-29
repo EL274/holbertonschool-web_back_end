@@ -8,8 +8,8 @@ def index_range(page: int, page_size: int) -> Tuple[int, int]:
         Portée de la page
 
         Args:
-            page: Current page
-            page_size: Total size of the page
+            page: Page actuelle
+            page_size: Taille totale de la page
 
         Return:
            tuple avec la plage de taille de début et de fin
