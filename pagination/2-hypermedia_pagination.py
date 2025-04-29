@@ -55,9 +55,9 @@ class Server:
                 Dictionnaires avec différents arguments
                 page_size: la longueur de la page du jeu de données renvoyé
                 page: le numéro de la page actuelle
-                data: la page du jeu de données 
+                data: la page du jeu de données
                 (equivalent to return from previous task)
-                next_page: numéro de la page suivante,Aucun s'il n'y a pas de page suivante
+                next_page: numéro de la page suivante,aucun s'il n'ya pas 
                 prev_page: numéro de la page précédente,
                 Aucun s'il n'y a pas de page précédente
                 total_pages: le nombre total de pages
@@ -93,7 +93,7 @@ def index_range(page: int, page_size: int) -> Tuple[int, int]:
     Portée de la page
     Args:
         page: Page actuelle
-        page_size: Taille totale de la page 
+        page_size: Taille totale de la page
     Return:
         tuple avec la plage de taille de début et de fin de page
     """
