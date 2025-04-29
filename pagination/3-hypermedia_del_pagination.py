@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Deletion-resilient hypermedia pagination
+Pagination hypermedia résistante à la suppression
 """
 
 import csv
@@ -9,7 +9,8 @@ from typing import List, Dict
 
 
 class Server:
-    """Server class to paginate a database of popular baby names.
+    """Classe de serveur pour paginer une base de données
+    de noms de bébé populaires
     """
     DATA_FILE = "Popular_Baby_Names.csv"
 
@@ -18,7 +19,7 @@ class Server:
         self.__indexed_dataset = None
 
     def dataset(self) -> List[List]:
-        """Cached dataset
+        """Ensemble de données mises en cache
         """
         if self.__dataset is None:
             with open(self.DATA_FILE) as f:
@@ -29,7 +30,7 @@ class Server:
         return self.__dataset
 
     def indexed_dataset(self) -> Dict[int, List]:
-        """Dataset indexed by sorting position, starting at 0
+        """Ensemble de données indexé par position de tri commençant à 0
         """
         if self.__indexed_dataset is None:
             dataset = self.dataset()
@@ -41,11 +42,11 @@ class Server:
 
     def get_hyper_index(self, index: int = None, page_size: int = 10) -> Dict:
         """
-            Get the hyper index
+            Obtenir l'hyper index
 
             Args:
-                index: Current page
-                page_size: Total size of the page
+                index: Page actuelle
+                page_size: Taille totale de la page
 
             Return:
                 Hyper index
