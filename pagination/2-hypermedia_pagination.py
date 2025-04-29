@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
-""" Hypermedia pagination """
+""" Pagination hypermedia"""
 import csv
 from math import ceil
 from typing import List, Tuple, Dict
 
 
 class Server:
-    """Server class to paginate a database of popular baby names.
+    """Classe de serveur pour paginer une base de données
+    de noms de bébé populaires
     """
     DATA_FILE = "Popular_Baby_Names.csv"
 
@@ -14,7 +15,7 @@ class Server:
         self.__dataset = None
 
     def dataset(self) -> List[List]:
-        """Cached dataset
+        """Ensemble de données mises en cache
         """
         if self.__dataset is None:
             with open(self.DATA_FILE) as f:
