@@ -26,7 +26,7 @@ class Server:
 
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
         """
-            Obtenir la page 
+            Obtenir la page
 
             Args:
                 page: page actuelle
