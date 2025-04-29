@@ -6,8 +6,8 @@ from typing import List, Tuple
 
 
 class Server:
-    """Classe de serveur pour paginer une base de données 
-    de noms de bébé populaires. 
+    """Classe de serveur pour paginer une base de données
+    de noms de bébé populaires.
     """
     DATA_FILE = "Popular_Baby_Names.csv"
 
