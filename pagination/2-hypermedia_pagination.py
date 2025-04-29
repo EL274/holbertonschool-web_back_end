@@ -26,14 +26,14 @@ class Server:
 
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
         """
-            Get the page
+            Obtenir la page
 
             Args:
-                page: Current page
-                page_size: Total size of the page
+                page: page actuelle
+                page_size: taille totale de la page
 
             Return:
-                List of the pagination done
+                Liste des paginations effectuées
         """
         assert isinstance(page, int) and page > 0
         assert isinstance(page_size, int) and page_size > 0
@@ -45,23 +45,23 @@ class Server:
 
     def get_hyper(self, page: int = 1, page_size: int = 10) -> Dict:
         """
-            Range of the page
+            Portée de la page
 
             Args:
-                page: Current page
-                page_size: Total size of the page
+                page: Page actuelle
+                page_size: Taille totale de la page
 
             Return:
-                Dict with different arguments
-                page_size: the length of the returned dataset page
-                page: the current page number
-                data: the dataset page
+                Dictionnaires avec différents arguments
+                page_size: la longueur de la page du jeu de données renvoyé
+                page: le numéro de la page actuelle
+                data: la page du jeu de données 
                 (equivalent to return from previous task)
-                next_page: number of the next page, None if no next page
-                prev_page: number of the previous page,
-                None if no previous page
-                total_pages: the total number of pages
-                in the dataset as an integer
+                next_page: numéro de la page suivante,Aucun s'il n'y a pas de page suivante
+                prev_page: numéro de la page précédente,
+                Aucun s'il n'y a pas de page précédente
+                total_pages: le nombre total de pages
+                dans l'ensemble de données sous forme d'entier
         """
 
         data = []
@@ -90,12 +90,12 @@ class Server:
 
 def index_range(page: int, page_size: int) -> Tuple[int, int]:
     """
-    Range of the page
+    Portée de la page
     Args:
-        page: Current page
-        page_size: Total size of the page
+        page: Page actuelle
+        page_size: Taille totale de la page 
     Return:
-        tuple with the range start and end size page
+        tuple avec la plage de taille de début et de fin de page
     """
 
     final_size: int = page * page_size
