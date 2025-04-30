@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""This module contains a method use to implement mongodb"""
+"""Ce module contient une méthode utilisée pour implémenter mongodb"""
 
 
 def list_all(mongo_collection):
-    """Returns a list of all documents in the collection"""
+    """Renvoie une liste de tous les documents de la collection"""
     return mongo_collection.find()
