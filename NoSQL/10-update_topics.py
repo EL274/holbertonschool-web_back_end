@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""This module contains a method use to implement mongodb"""
+"""Ce module contient une méthode utilisée pour implémenter mongodb"""
 
 
 def update_topics(mongo_collection, name, topics):
-    """Changes all topics of a school document based on the name"""
+    """modifie tous les sujets d'un document scolaire en fonction du nom"""
     mongo_collection.update_many({"name": name}, {"$set": {"topics": topics}})
