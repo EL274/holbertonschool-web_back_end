@@ -30,7 +30,3 @@ def get_nginx_log_stats():
         {"method": "GET", "path": "/status"})
     print(f"{status_count} logs with method=GET")
     print("\tpath=/status")
-
-
-if __name__ == "__main__":
-    get_nginx_log_stats()
