@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""This module contains a method use to implement mongodb"""
+"""Ce module contient une méthode utilisée pour implémenter mongodb"""
 
 
 def schools_by_topic(mongo_collection, topic):
-    """Returns the list of school having a specific topic"""
+    """Renvoie la liste des écoles ayant un sujet spécifique"""
     return mongo_collection.find({"topics": {"$all": [topic]}})
