@@ -20,11 +20,10 @@ def log_stats():
     client = MongoClient('mongodb://localhost:27017/')
     db = client.logs
     collection = db.nginx
-    
+
     # Compte le nombre total de documents dans la collection
     total = collection.count_documents({})
     print(f"{total} logs")
-    
     # Affiche les statistiques par méthode HTTP
     print("Methods:")
     methods = ["GET", "POST", "PUT", "PATCH", "DELETE"]
@@ -32,7 +31,6 @@ def log_stats():
         # Compte le nombre de requêtes pour chaque méthode
         method_count = collection.count_documents({"method": method})
         print(f"\tmethod {method}: {method_count}")
-    
     # Compte le nombre de requêtes GET vers /status
     status = collection.count_documents(
         {"method": "GET", "path": "/status"}
