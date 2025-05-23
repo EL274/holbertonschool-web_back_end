@@ -1,5 +1,12 @@
 module.exports = {
-  presets: [["env", {"exclude": ["transform-regenerator"]}]]
-}
-    
-  
+  presets: [
+    [
+      '@babel/preset-env',
+      {
+        targets: {
+          node: 'current',
+        },
+      },
+    ],
+  ],
+};
