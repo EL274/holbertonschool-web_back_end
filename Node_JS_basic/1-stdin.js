@@ -10,5 +10,5 @@ process.stdin.on('readable', () => {
 
 // Gérer la fin du flux stdin (Ctrl+D)
 process.stdin.on('end', () => {
-  console.log("This important software is now closing");
+  process.stdout.write("This important software is now closing");
 });
